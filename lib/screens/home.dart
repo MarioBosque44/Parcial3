@@ -13,9 +13,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    void onItemTapped(int index) {
-      
-    }
+    void onItemTapped(int index) {}
 
     return Scaffold(
       body: SafeArea(
@@ -67,10 +65,11 @@ class PlacesPage extends ConsumerWidget {
         ),
         const Expanded(
           child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 32.0),
-              child: Center(
-                child: Text('Aqui va el grid con los lugares'),
-              )),
+            padding: EdgeInsets.symmetric(horizontal: 32.0),
+            child: Center(
+              child: Text('Aqui va el grid con los lugares'),
+            ),
+          ),
         ),
       ],
     );
